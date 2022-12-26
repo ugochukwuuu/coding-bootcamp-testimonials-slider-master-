@@ -13,15 +13,13 @@
     --dist: 6.5em;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    gap: 1em;
+    place-content: center;
     min-height: 100vh;
     background-image: url("./images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position: left bottom;
-    /* background-color: var(--Grayish-Blue); */
 }
 main{
     display: flex;
@@ -152,5 +150,12 @@ main{
     .images-container{
         padding: 7em;
         background-size: 40em;
+    }
+    .slider-buttons-container{
+        bottom: 6em;
+        left: 10em;
+    }
+    .texts-section{
+        transform: translateX(9em);
     }
   }
